@@ -29,12 +29,8 @@ body {
   align-items: center;
   font-size: 1.2rem;
   accent-color: var(--color-accent);
-  background: rgb(81, 87, 111);
-  background: linear-gradient(
-    106deg,
-    rgba(81, 87, 111, 1) 0%,
-    rgba(60, 61, 69, 1) 100%
-  );
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
 }
 
 #root {
@@ -46,8 +42,9 @@ body {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  -webkit-box-shadow: 5px 5px 21px 4px rgba(0, 0, 0, 0.45);
-  box-shadow: 5px 5px 21px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 10px 8px 40px -16px rgba(232,26,185,1);
+  -webkit-box-shadow: 10px 8px 40px -16px rgba(232,26,185,1);
+  -moz-box-shadow: 10px 8px 40px -16px rgba(232,26,185,1);
 }
 
 code {

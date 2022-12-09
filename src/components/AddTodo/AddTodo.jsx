@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import {v4 as uuidv4} from 'uuid';
+import {v4 as uuidv4} from 'uuid'; // 고유한 아이디 라이브러리 생성 
+import styles from './AddTodo.module.css';
+
 
 export default function AddTodo({ onAdd }) {
   const [text, setText] = useState('');
@@ -13,14 +15,15 @@ export default function AddTodo({ onAdd }) {
     setText('');
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <input
+      className={styles.input}
         type ='text'
         placeholder='Add Todo'
         value = {text}
         onChange ={handleChange} 
       />
-      <button>Add</button>
+      <button className={styles.button}>Add</button>
     </form>
   );
   
